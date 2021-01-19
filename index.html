@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+		<title>Collect boxes</title>
+	</head>
+	<body>
+		<div id="container" class="container">
+			<span id="best" class="best">Best score: <span id="bestScore"></span></span>
+			<div id="gameWindow" class="gameWindow">
+				<div id="overlay" class="overlay"></div>
+				<span id="score" class="score">Score: 0</span>
+				<span id="seconds" class="seconds">30s</span>
+				<span id="ready">READY?</span>
+				<span id="go">GO!</span>
+				<div id="play"></div>
+				<span id="audioToggle" class="audioToggle">
+					<img src="img/speakerOFF.png" alt="speaker off icon" title="Audio ON/OFF">
+					<img src="img/speakerON.png" alt="speaker on icon" class="hideSpeaker">
+				</span>
+				<span id="fullscreenToggle" class="fullscreenToggle"><img src="img/fullscreen.png" title="Fullscreen" alt="fullscreen icon"></span>	
+			</div>
+			<p id="download" class="download">Made with <a href="http://threejs.org/" target="_blank" title="threejs.org">threejs</a>. Code at <a href="https://github.com/iamsimon/threejs-collect-boxes" target="_blank" title="github.com">github</a>.</p>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+		<script src="js/bigscreen.min.js"></script>
+		<script src="js/game.js"></script>
+		<script src="js/fullscreen.js"></script>
+	</body>
+</html>
